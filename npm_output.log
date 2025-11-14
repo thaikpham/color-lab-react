@@ -1,3 +1,9 @@
 
-> sony-color-lab@1.0.1 start
-> react-scripts start
+> sony-color-lab@1.0.1 dev
+> vite
+
+
+  VITE v5.4.21  ready in 717 ms
+
+  ➜  Local:   http://localhost:5173/
+  ➜  Network: use --host to expose

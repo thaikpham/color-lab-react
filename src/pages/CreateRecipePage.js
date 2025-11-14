@@ -18,7 +18,7 @@ import {
   useToast,
 } from '@chakra-ui/react';
 import { useAuth } from '../hooks/useAuth';
-import { supabase } from '../services/supabase';
+import { supabase } from '../config/supabaseClient';
 import { useHistory } from 'react-router-dom';
 
 const CreateRecipePage = () => {

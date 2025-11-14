@@ -1,5 +1,5 @@
 import { useState, useEffect, useCallback } from 'react';
-import { supabase } from '../services/supabase';
+import { supabase } from '../config/supabaseClient';
 import { useAuth } from './useAuth';
 
 export const useFavorites = () => {

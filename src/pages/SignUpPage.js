@@ -13,17 +13,17 @@ import {
 import { useAuth } from '../hooks/useAuth';
 import { useHistory } from 'react-router-dom';
 
-const LoginPage = () => {
+const SignUpPage = () => {
   const [email, setEmail] = React.useState('');
   const [password, setPassword] = React.useState('');
-  const { signIn } = useAuth();
+  const { signUp } = useAuth();
   const history = useHistory();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const { error } = await signIn({ email, password });
+    const { error } = await signUp({ email, password });
     if (error) {
-      console.error('Error signing in:', error.message);
+      console.error('Error signing up:', error.message);
     } else {
       history.push('/');
     }
@@ -38,7 +38,7 @@ const LoginPage = () => {
     >
       <Stack spacing={8} mx={'auto'} maxW={'lg'} py={12} px={6}>
         <Stack align={'center'}>
-          <Text fontSize={'4xl'}>Sign in to your account</Text>
+          <Text fontSize={'4xl'}>Create a new account</Text>
         </Stack>
         <Box
           rounded={'lg'}
@@ -73,7 +73,7 @@ const LoginPage = () => {
                   }}
                   type="submit"
                 >
-                  Sign in
+                  Sign up
                 </Button>
               </Stack>
             </Stack>
@@ -84,4 +84,4 @@ const LoginPage = () => {
   );
 };
 
-export default LoginPage;
+export default SignUpPage;

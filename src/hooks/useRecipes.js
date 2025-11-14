@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { supabase } from '../services/supabase'; // Adjust path as needed
+import { supabase } from '../config/supabaseClient'; // Adjust path as needed
 
 const RECIPES_PER_PAGE = 6;
 

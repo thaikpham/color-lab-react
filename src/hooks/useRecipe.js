@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { supabase } from '../services/supabase';
+import { supabase } from '../config/supabaseClient';
 
 /**
  * Custom hook to fetch a single recipe by its ID from Supabase.
